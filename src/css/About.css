@@ -1,0 +1,326 @@
+/*------------------*/
+/*   關於頁面設定    */
+/*------------------*/
+.about_page{
+  padding-top: 60px;
+  background-color: #f7f7f7;;
+  font-family: 'Inter', sans-serif;
+}
+.about_page h1{
+    font-size: 27px;
+    margin-top: 150px;
+    opacity: 0.5;
+    color: #504f4f;
+}
+.about_page h2{
+    font-size: 45px;
+    opacity: 0.85;
+}
+.about_page p{
+    font-size: 18px;
+    opacity: 0.85;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+.about_page .divider_about{
+  width: 100%;
+  height: 1px;
+  background-color: #ddd;
+  opacity: 0.8;
+  margin-top: 50px;
+  margin-bottom: 180px;
+}
+
+/*------------------*/
+/* section關於大標題 */
+/*------------------*/
+/*- 關於版面 -*/
+.about_page .about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 85vh;
+  max-width: 1400px; /* 最大寬度 */
+  margin: 0 auto;    /* 左右自動置中 */
+}
+
+/*- 標題內容 -*/
+.about_page .about_main{
+  width: 950px;
+  text-align: start;
+  min-height: 2000px;
+}
+
+/*- 標題排版 -*/
+.about_page .about_main_logo{
+    display: flex;
+    justify-content: center;
+    min-height: 450px;
+}
+
+/*- 標題左側圖片(父) -*/
+.about_page .about_main_logo{
+    opacity: 1;
+}
+
+/*- 標題左側圖片大小(子) -*/
+.about_page .about_logo{
+    width:450px;
+    height: 350px;
+    margin-right: 85px;
+}
+
+/*- 標題右側內容(子) -*/
+.about_page .main_logo_p {
+    margin-top: 40px;
+}
+
+/*- 標題左側圖片大小(子) -*/
+.about_page .why_logo{
+    width:450px;
+    height: 400px;
+    margin-right: 85px;
+}
+
+/*------------------*/
+/*     核心功能      */
+/*------------------*/
+.about_page .about_main_work{
+  margin-top: -60px;
+}
+
+.about_page .about_main_work h2{
+  margin-bottom: 18px;
+}
+
+.about_page .work_intro{
+  max-width: 760px;
+  margin: 0 0 42px;
+  color: #4f4f4f;
+  font-size: 17px;
+  line-height: 1.9;
+}
+
+.about_page .work_cards{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.about_page .work_card{
+  min-height: 300px;
+  padding: 26px 22px;
+  border: 1px solid #dedede;
+  border-radius: 14px;
+  background: #fff;
+  box-sizing: border-box;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.about_page .work_card:hover{
+  transform: translateY(-5px);
+  border-color: #c9c9c9;
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.08);
+}
+
+.about_page .work_card h3{
+  margin: 0 0 14px;
+  color: #111;
+  font-size: 22px;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.about_page .work_card p{
+  margin: 0;
+  margin-top: 30px;
+  color: #5f5f5f;
+  font-size: 15px;
+  line-height: 1.8;
+  letter-spacing: 0;
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------*/
+/*     底下資訊欄      */
+/*---------------------*/
+.about_page .footer{
+  background-color: #f1f1f1;
+  padding: 70px 0 25px;
+  border-top: 1px solid #ddd;
+  min-height: 300px;
+}
+
+.about_page .footer_main{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 70px;
+}
+
+/* 左側品牌 */
+.about_page .footer_brand{
+  display: flex;
+  flex-direction: column;
+}
+
+.about_page .footer_logo_box{
+  display: flex;
+  align-items: center;
+}
+
+.about_page .footer_logo{
+  margin-left: -30px;
+  width: 95px;
+  height: 75px;
+  object-fit: contain;
+  opacity: 0.8;
+}
+
+.about_page .footer_logo_box h2{
+  margin: 0;
+  font-size: 28px;
+  color: #111;
+}
+
+.about_page .footer_brand p{
+  margin-top: 18px;
+  color: #666;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* 欄位 */
+.about_page .footer_col{
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.about_page .footer_col h3{
+  margin: 0 0 8px;
+  font-size: 18px;
+  color: #111;
+}
+
+.about_page .footer_col a{
+  text-decoration: none;
+  color: #666;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.about_page .footer_col a:hover{
+  color: #111;
+  transform: translateX(4px);
+}
+
+/* 底部版權 */
+.about_page .footer_bottom{
+  max-width: 1200px;
+  margin: 55px auto 0;
+  padding-top: 22px;
+
+  border-top: 1px solid #ddd;
+  text-align: center;
+}
+
+.about_page .footer_bottom p{
+  margin: 0;
+  color: #888;
+  font-size: 14px;
+}
+
+/* 手機版 */
+
+@media (max-width: 768px){
+  .about_page h1{
+    margin-top: 90px;
+    font-size: 22px;
+  }
+
+  .about_page h2{
+    font-size: 34px;
+    line-height: 1.25;
+    overflow-wrap: anywhere;
+  }
+
+  .about_page p{
+    font-size: 16px;
+    line-height: 1.85;
+    letter-spacing: 0;
+  }
+
+  .about_page .divider_about{
+    margin-top: 70px;
+    margin-bottom: 90px;
+  }
+
+  .about_page .about{
+    padding: 0 22px;
+    box-sizing: border-box;
+  }
+
+  .about_page .about_main{
+    width: 100%;
+    min-height: auto;
+  }
+
+  .about_page .about_main_logo{
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .about_page .main_logo_pic{
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .about_page .about_logo,
+  .about_page .why_logo{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 0 24px;
+    object-fit: contain;
+  }
+
+  .about_page .about_main_work{
+    margin-top: 0;
+  }
+
+  .about_page .work_cards{
+    grid-template-columns: 1fr;
+  }
+
+  .about_page .work_card{
+    min-height: auto;
+  }
+
+  .about_page .footer_main{
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .about_page .footer{
+    padding: 50px 0 25px;
+  }
+}
